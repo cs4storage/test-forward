@@ -37,7 +37,7 @@ async function forwardReq(request, context) {
     
     let newHdrs = new Headers()
     for (const [key, value] of request.headers) {
-      context.log( "request header -- " + key + ": " +  value )
+      context.log(  key + ": " +  value )
 
       if (key.toLowerCase() == TOKEN_HEADER.toLowerCase()) {
           continue;
@@ -71,9 +71,9 @@ async function forwardReq(request, context) {
     //console.log("org headers: " + request.headers.toString())
 
     
-    for (const [key, value] of newHdrs){
+    //for (const [key, value] of newHdrs){
       //context.log("new headers  " + key + ": " + value)
-    }
+    //}
     
   
     
