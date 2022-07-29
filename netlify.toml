@@ -96,7 +96,7 @@
   function = "test-forward"
 
 [[edge_functions]]
-  path = "/"
+  path = "/*"
   function = "test-forward"
 
 [[redirects]]
